@@ -271,7 +271,9 @@ header {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px;
-    
+  }
+  p {
+    color: $white;
   }
 }
 
@@ -303,6 +305,9 @@ header {
 }
 
 @media screen and (min-width: 60em) {
+  .text--left-lap-and-up {
+    text-align: left !important;
+  }
   header {
     background-color: transparent;
     padding: 10px 0;
