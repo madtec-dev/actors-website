@@ -2160,21 +2160,39 @@ header {
   background-size: cover;
   -o-background-size: cover; }
 
-#home {
-  background: url(/img/front.jpg) no-repeat top center;
-  background-attachment: fixed;
-  z-index: 1; }
-  #home h1 {
+.full-name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2; }
+  .full-name h1 {
+    width: 100%;
     font-size: 4.23607em;
     font-weight: 300;
     color: white;
     text-shadow: 0px 1px 4px #000000; }
-  #home h2 {
+  .full-name h2 {
     color: #CCCCCC;
     font-size: 1.61803em;
     font-weight: 400;
     text-transform: uppercase;
     text-shadow: 0px 1px 3px #000000; }
+
+#home {
+  position: relative;
+  background: url(/img/front.jpg) no-repeat top center;
+  background-attachment: fixed;
+  z-index: 1; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 /* WORK */
 section {
@@ -2336,6 +2354,14 @@ section::after {
   background: #CCCCCC; }
 
 /* LIGHT */
+.skin-1 .overlay {
+  background-color: rgba(255, 255, 255, 0.7); }
+.skin-1 .full-name h1 {
+  color: #333333;
+  text-shadow: none; }
+.skin-1 .full-name h2 {
+  color: #514947;
+  text-shadow: none; }
 .skin-1 section {
   background-color: #FEFEFE; }
   .skin-1 section h1 {
@@ -2349,7 +2375,13 @@ section::after {
 .skin-1 .top-nav-collapse {
   background-color: #333333;
   padding: 0; }
+.skin-1 .nav-collapse a {
+  color: #333333; }
+.skin-1 .logo {
+  color: #514947; }
 .skin-1 .top-nav-collapse a {
+  color: #FEFEFE; }
+.skin-1 .top-nav-collapse .logo {
   color: #FEFEFE; }
 .skin-1 .nav-collapse a:active,
 .skin-1 .nav-collapse .active a {

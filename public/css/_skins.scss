@@ -4,6 +4,19 @@ $skin-1-nav-bg: #3e495f;
 $skin-1-a-color: #9ea6b9;
 $skin-1-page-bg: #f4f6fa;
 .skin-1 {
+  .overlay {
+    background-color: rgba(255, 255, 255, .7);
+  }
+  .full-name {
+  h1 {
+    color: $dark-gray;
+    text-shadow: none;
+  }
+  h2 {
+    color: $gray;
+    text-shadow: none;
+  }
+  }
   section {
     background-color: $white;
     h1 {
@@ -24,9 +37,20 @@ $skin-1-page-bg: #f4f6fa;
     background-color: $dark-gray;
     padding: 0;
   }
+  .nav-collapse a {
+    color: $dark-gray;
+  }
 
-  .top-nav-collapse a {
-    color: $white;
+  .logo {
+    color: $gray;
+  }
+  .top-nav-collapse { 
+    a {
+      color: $white;
+    }
+    .logo {
+     color: $white; 
+    }
   }
   .nav-collapse a:active,
   .nav-collapse .active a {
