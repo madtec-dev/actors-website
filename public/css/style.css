@@ -1989,6 +1989,11 @@ body {
   font-size: 1em;
   font-family: "Lato", Helvetica, sans-serif; }
 
+.container {
+  min-height: 100%;
+  overflow: hidden;
+  /* we don't want the pseudo-elements sticking out */ }
+
 a {
   color: #00B7FF; }
 
@@ -2159,24 +2164,74 @@ header {
   background: url(/img/front.jpg) no-repeat top center;
   background-attachment: fixed;
   z-index: 1; }
+  #home h1 {
+    font-size: 4.23607em;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0px 1px 4px #000000; }
+  #home h2 {
+    color: #CCCCCC;
+    font-size: 1.61803em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 3px #000000; }
 
 /* WORK */
-#work {
+section {
+  position: relative;
   padding: 0 12px;
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.5);
   background-color: #333333;
   min-height: 100%;
   z-index: 2; }
-  #work h1 {
+  section h1 {
     color: #CCCCCC;
     font-size: 1.61803em;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px; }
-    #work h1 span {
+    section h1 span {
       font-size: 2.61803em; }
-  #work p {
+  section p {
     color: #FEFEFE; }
+
+/* QUOTES */
+.quote {
+  background-color: transparent; }
+  .quote h3 {
+    color: #514947;
+    font-size: 2.61803em;
+    font-weight: 300;
+    font-style: italic; }
+
+/* SEPARATOR */
+section::before,
+section::after {
+  position: absolute;
+  content: '';
+  pointer-events: none; }
+
+/* Triangles */
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0; }
+
+.ss-style-doublediagonal::before {
+  height: 50%;
+  background: #514947;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0; }
 
 /* VIDEO */
 .video__wrapper {
@@ -2201,12 +2256,12 @@ header {
   position: fixed;
   top: 90px;
   right: 0px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 9999; }
 
 .theme-config-box {
   margin-right: -220px;
   position: relative;
-  z-index: 2000;
   transition-duration: 0.8s; }
 
 .theme-config-box.show {
@@ -2281,11 +2336,11 @@ header {
   background: #CCCCCC; }
 
 /* LIGHT */
-.skin-1 #work {
+.skin-1 section {
   background-color: #FEFEFE; }
-  .skin-1 #work h1 {
+  .skin-1 section h1 {
     color: #514947; }
-  .skin-1 #work p {
+  .skin-1 section p {
     color: #333333; }
 .skin-1 header {
   background-color: #333333; }

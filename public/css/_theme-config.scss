@@ -3,12 +3,12 @@
   top: 90px;
   right: 0px;
   overflow: hidden;
+  z-index: 9999;
 }
 
 .theme-config-box {
   margin-right: -220px;
   position: relative;
-  z-index: 2000;
   transition-duration: 0.8s;
 }
 
