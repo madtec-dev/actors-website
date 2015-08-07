@@ -267,10 +267,13 @@ header {
   z-index: 2;
   h1 {
     color: $light-gray;
-    font-size: ms(2);
+    font-size: ms(1);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px;
+    span {
+      font-size: ms(2);
+    }
   }
   p {
     color: $white;
@@ -297,18 +300,22 @@ header {
 }
 
 
+@import "theme-config";
+@import "skins";
+
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 45em) {
+  .text--left-lap-and-up {
+    text-align: left !important;
+  }
   html {
     font-size: 110%;
   }
 }
 
-@media screen and (min-width: 60em) {
-  .text--left-lap-and-up {
-    text-align: left !important;
-  }
-  header {
+@media screen and (min-width: 64em) {
+  header, .skin-1 header {
     background-color: transparent;
     padding: 10px 0;
   }

@@ -2169,10 +2169,12 @@ header {
   z-index: 2; }
   #work h1 {
     color: #CCCCCC;
-    font-size: 2.61803em;
+    font-size: 1.61803em;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px; }
+    #work h1 span {
+      font-size: 2.61803em; }
   #work p {
     color: #FEFEFE; }
 
@@ -2195,15 +2197,119 @@ header {
   color: #CCCCCC;
   font-style: italic; }
 
+.theme-config {
+  position: fixed;
+  top: 90px;
+  right: 0px;
+  overflow: hidden; }
+
+.theme-config-box {
+  margin-right: -220px;
+  position: relative;
+  z-index: 2000;
+  transition-duration: 0.8s; }
+
+.theme-config-box.show {
+  margin-right: 0px; }
+
+.spin-icon {
+  background: #0A6EA8;
+  position: absolute;
+  padding: 7px 10px 7px 13px;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 16px;
+  top: 0;
+  left: 0px;
+  width: 40px;
+  color: white;
+  cursor: pointer; }
+
+.skin-setttings {
+  width: 220px;
+  margin-left: 40px;
+  background: #514947; }
+
+.skin-setttings .title {
+  background: #efefef;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px; }
+
+.setings-item {
+  padding: 10px 30px;
+  cursor: pointer; }
+
+.setings-item.skin {
+  text-align: center; }
+
+.setings-item .switch {
+  float: right; }
+
+.skin-name a {
+  text-transform: uppercase; }
+
+.setings-item a {
+  color: white; }
+
+.default-skin, .light-skin, .colored-skin {
+  text-align: center; }
+
+.default-skin {
+  font-weight: 600;
+  background: #514947; }
+
+.default-skin:hover {
+  background: #333333; }
+
+.colored-skin {
+  font-weight: 600;
+  background: #0d8ddb; }
+
+.colored-skin:hover {
+  background: #0A6EA8; }
+
+.light-skin {
+  font-weight: 600;
+  background: #FEFEFE; }
+  .light-skin a {
+    color: #514947; }
+
+.light-skin:hover {
+  background: #CCCCCC; }
+
+/* LIGHT */
+.skin-1 #work {
+  background-color: #FEFEFE; }
+  .skin-1 #work h1 {
+    color: #514947; }
+  .skin-1 #work p {
+    color: #333333; }
+.skin-1 header {
+  background-color: #333333; }
+  .skin-1 header a {
+    color: #FEFEFE; }
+.skin-1 .top-nav-collapse {
+  background-color: #333333;
+  padding: 0; }
+.skin-1 .top-nav-collapse a {
+  color: #FEFEFE; }
+.skin-1 .nav-collapse a:active,
+.skin-1 .nav-collapse .active a {
+  background: #CCCCCC;
+  color: #333333; }
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 45em) {
-  html {
-    font-size: 110%; } }
-@media screen and (min-width: 60em) {
   .text--left-lap-and-up {
     text-align: left !important; }
 
-  header {
+  html {
+    font-size: 110%; } }
+@media screen and (min-width: 64em) {
+  header, .skin-1 header {
     background-color: transparent;
     padding: 10px 0; }
 
