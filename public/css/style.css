@@ -1963,6 +1963,9 @@ html {
 .inline {
   display: inline-block; }
 
+.middle {
+  vertical-align: middle; }
+
 .vertical--middle {
   display: table;
   height: 100%;
@@ -2210,6 +2213,17 @@ section {
     letter-spacing: 4px; }
     section h1 span {
       font-size: 2.61803em; }
+  section h2 {
+    color: #1F81BA;
+    text-transform: uppercase;
+    font-weight: 400; }
+    section h2 small {
+      color: #FEFEFE;
+      font-weight: 300;
+      padding-left: 1rem; }
+  section h3 {
+    color: #CCCCCC;
+    font-style: italic; }
   section p {
     color: #FEFEFE; }
 
@@ -2221,6 +2235,16 @@ section {
     font-size: 2.61803em;
     font-weight: 300;
     font-style: italic; }
+
+#about .avatar {
+  max-width: 100%;
+  border-radius: 50%; }
+#about img {
+  border-radius: 50%;
+  max-width: 100%;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.75); }
+#about li {
+  color: #CCCCCC; }
 
 /* SEPARATOR */
 section::before,
