@@ -2005,6 +2005,7 @@ a {
 
 /* NAV */
 header {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   background-color: #fefefe;
   position: fixed;
   font-size: 1em;
@@ -2241,13 +2242,28 @@ section {
 
 #about .avatar {
   max-width: 100%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: relative; }
+#about .avatar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 6px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0 0 6px 6px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 0 6px 6px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 0 6px 6px rgba(0, 0, 0, 0.6); }
 #about img {
   border-radius: 50%;
-  max-width: 100%;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.75); }
+  max-width: 100%; }
 #about li {
-  color: #CCCCCC; }
+  color: #FEFEFE; }
+  #about li i {
+    color: #CCCCCC; }
+  #about li span {
+    font-size: 1.61803em; }
 
 /* SEPARATOR */
 section::before,
@@ -2395,6 +2411,10 @@ section::after {
     color: #514947; }
   .skin-1 section p {
     color: #333333; }
+  .skin-1 section h2 small {
+    color: #514947;
+    font-weight: 300;
+    padding-left: 1rem; }
 .skin-1 header {
   background-color: #333333; }
   .skin-1 header a {
@@ -2403,18 +2423,31 @@ section::after {
   background-color: #333333;
   padding: 0; }
 .skin-1 .nav-collapse a {
-  color: #333333; }
+  color: #FEFEFE; }
 .skin-1 .logo {
-  color: #514947; }
+  color: #FEFEFE; }
 .skin-1 .top-nav-collapse a {
   color: #FEFEFE; }
 .skin-1 .top-nav-collapse .logo {
+  color: #FEFEFE; }
+.skin-1 .nav-toggle::before {
   color: #FEFEFE; }
 .skin-1 .nav-collapse a:active,
 .skin-1 .nav-collapse .active a {
   background: #CCCCCC;
   color: #333333; }
+.skin-1 #about li {
+  color: #514947; }
+  .skin-1 #about li i {
+    color: #CCCCCC; }
 
+@media screen and (min-width: 64em) {
+  .skin-1 .logo {
+    color: #514947; }
+  .skin-1 .nav-collapse a {
+    color: #514947; }
+  .skin-1 .top-nav-collapse a {
+    color: #FEFEFE; } }
 /* MEDIA QUERIES */
 @media screen and (min-width: 45em) {
   .text--left-lap-and-up {
@@ -2425,7 +2458,8 @@ section::after {
 @media screen and (min-width: 64em) {
   header, .skin-1 header {
     background-color: transparent;
-    padding: 10px 0; }
+    padding: 10px 0;
+    box-shadow: none; }
 
   .js .nav-collapse {
     position: relative; }
@@ -2470,7 +2504,7 @@ section::after {
   .top-nav-collapse a {
     color: #514947; }
 
-  .top-nav-collapse {
+  header.top-nav-collapse {
     padding: 0;
     background-color: #fff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); } }

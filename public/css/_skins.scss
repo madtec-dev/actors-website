@@ -25,6 +25,13 @@ $skin-1-page-bg: #f4f6fa;
     p {
       color: $dark-gray;
     }
+    h2 {
+      small {
+        color: $gray;
+        font-weight: 300;
+        padding-left: 1rem;
+      }
+    }
   }
   header {
     background-color: $dark-gray;
@@ -38,11 +45,11 @@ $skin-1-page-bg: #f4f6fa;
     padding: 0;
   }
   .nav-collapse a {
-    color: $dark-gray;
+    color: $white;
   }
 
   .logo {
-    color: $gray;
+    color: $white;
   }
   .top-nav-collapse { 
     a {
@@ -52,11 +59,39 @@ $skin-1-page-bg: #f4f6fa;
      color: $white; 
     }
   }
+  .nav-toggle::before {
+    color: $white;
+  }
   .nav-collapse a:active,
   .nav-collapse .active a {
   background: $light-gray;
   color: $dark-gray;
   }
+  #about {
+    li {
+      color: $gray;
+      i {
+        color: $light-gray;
+      }
+    }
+  }
 }
 
 
+@media screen and (min-width: 64em) {
+  .skin-1 {
+    .logo {
+      color: $gray;
+    }
+    .nav-collapse a {
+      color: $gray;
+    }
+
+    .top-nav-collapse { 
+      a {
+        color: $white;
+      }
+    }
+
+  }
+}
