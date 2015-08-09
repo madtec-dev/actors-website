@@ -177,5 +177,35 @@
   </div>
   <section id="contact" class="text--center ss-style-doublediagonal pt+ pb++">
     <h1 class="mb+ text--center">trabajemos <span>juntos</span></h1>
+    <div class="phone pb">
+      <a href="tel:612-345-678"><i class="fa fa-phone fa-fw"></i> 612 345 678</a>
+    </div>
+    <div class="email pb+">
+      <a href="mailto:dire@email.com"><i class="fa fa-envelope fa-fw"></i> dir@email.com</a>
+    </div>
+<div class="layout">
+  <div class="layout__item u-12/12 u-5/12-lap-and-up">
+<form id="project-form" data-parsley-validate="data-parsley-validate" method="POST" action="/start-project" enctype="multipart/form-data" class="text--center">
+  <fieldset class="pb">
+    <legend>datos de contacto</legend>
+    <div class="pb">
+      <input type="text" name="name" placeholder="Nombre" data-parsley-trigger="change" data-parsley-required-message="Por favor escribe tu nombre." required="required"/>
+    </div>
+    <div class="pb">
+      <input type="email" name="email" placeholder="Email" data-parsley-trigger="change" required="required"/>
+    </div>
+  </fieldset>
+ <div class="pb+">
+      <h3>Cuentame mas sobre el proyecto</h3>
+      <label for="about-project"></label>
+      <textarea id="about-project" name="project_details" title="Cuentanos mas sobre tu proyecto" data-parsley-trigger="keyup" data-parsley-minlength="20" required="required"></textarea>
+    </div>
+  <fieldset>
+    <button id="btnProject" type="submit" class="btn btn--success text--uppercase">enviar</button>
+    <!--input(type="reset" id="reset-form" value="reset")-->
+  </fieldset>
+</form>
+  </div>
+</div>
   </section>
 </div>

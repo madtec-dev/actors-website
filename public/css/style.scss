@@ -14,6 +14,10 @@
   text-align: right;
 }
 
+.text--uppercase {
+  text-transform: uppercase;
+}
+
 .inline {
   display: inline-block;
 }
@@ -401,6 +405,16 @@ section {
   }
 }
 
+.phone, .email {
+  a {
+    font-size: ms(2);
+    text-decoration: none;
+  }
+}
+.email a{
+  color: #8CC739;
+}
+
 /* SEPARATOR */
 section::before,
 section::after {
@@ -474,6 +488,113 @@ section::after {
 .video__caption {
   color: $light-gray;
   font-style: italic;
+}
+
+/***********************************
+ * FORM 
+ ***********************************/
+// This should be a independent component (object.form)
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+border: 0;
+}
+
+.start-project__form {
+  display: inline-block;
+}
+fieldset {
+  border: 0;
+}
+fieldset h3 {
+  text-transform: uppercase;
+}
+.field {
+  display: inline-block;
+}
+input, select{
+  //@include inuit-font-size(22px);
+  @extend .p-;
+  color: #333333;
+  width: 100%;
+  font-weight: 300;
+  display:inline-block;
+}
+input[type="checkbox"] {
+  width: auto;
+}
+label {
+  display:inline-block;
+}
+textarea {
+  //@include inuit-font-size(14px);
+  @extend .p-;
+  height: 12em; 
+  width: 100%;
+  color: #333333;
+}
+legend {
+  display: none;
+}
+input.read-only {
+  border: 0 none transparent;
+  font-weight: 700;
+  font-size: 21px;
+}
+.uploader {
+  background: #dddddd;
+}
+
+/******************************
+ * Validator styles
+ ******************************/
+input.field-success,
+select.field-success,
+textarea.field-success {
+  //color: #468847;
+  //background-color: #DFF0D8;
+  border: 1px solid #19A239;
+}
+
+input.field-error,
+select.field-error,
+textarea.field-error {
+  //color: #B94A48;
+  //background-color: #F2DEDE;
+  border: 1px solid #D9411E;
+}
+
+.error {
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  color: #D9411E;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.error.filled {
+  opacity: 1;
+}
+.alert {
+  @extend .p-;
+  @extend .mb;
+  border-radius: 4px;
+}
+.alert--success {
+  background-color: #97E597;
+  color: #468847;
+}
+.alert--danger {
+  background-color: #F2DEDE;
+  color: #D9411E;
 }
 
 

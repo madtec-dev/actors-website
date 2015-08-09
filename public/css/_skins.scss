@@ -79,6 +79,10 @@ $skin-1-page-bg: #f4f6fa;
       }
     }
   }
+  input, textarea {
+    border: 1px solid $light-gray;
+  }
+
 }
 
 .skin-2 {
@@ -113,7 +117,7 @@ $skin-1-page-bg: #f4f6fa;
     }
   }
   .logo {
-    color: $white;
+    color: #114A6B;
   }
   .top-nav-collapse { 
     a {
@@ -144,6 +148,12 @@ $skin-1-page-bg: #f4f6fa;
       color: #114A6B;
     }
   }
+  .phone a {
+    color: #114A6B;
+  }
+  .btn {
+    background-color: #114A6B;
+  }
 }
 
 
@@ -162,6 +172,10 @@ $skin-1-page-bg: #f4f6fa;
         color: $white;
       }
     }
-
+  }
+  .skin-2 {
+    .logo {
+      color: $white;
+    }
   }
 }
