@@ -67,6 +67,10 @@ $skin-1-page-bg: #f4f6fa;
   background: $light-gray;
   color: $dark-gray;
   }
+  .ss-style-doublediagonal::before {
+     background-color: $light-gray;
+   }
+
   #about {
     li {
       color: $gray;
@@ -76,6 +80,72 @@ $skin-1-page-bg: #f4f6fa;
     }
   }
 }
+
+.skin-2 {
+  .overlay {
+    background-color: rgba(17, 74, 107, .7);
+  }
+  .full-name {
+  h1 {
+    color: $white;
+    text-shadow: none;
+  }
+  h2 {
+    color: $light-gray;
+    text-shadow: none;
+  }
+  }
+  section {
+    background-color: #1F81BA;
+    h1 {
+      color: $white;
+    }
+    p {
+      color: $white;
+    }
+    h2 {
+      color: $dark-gray;
+      small {
+        color: $light-gray;
+        font-weight: 300;
+        padding-left: 1rem;
+      }
+    }
+  }
+  .logo {
+    color: $white;
+  }
+  .top-nav-collapse { 
+    a {
+    color: #114A6B;
+    }
+    .logo {
+     color: #114A6B; 
+    }
+  }
+  .nav-collapse a:active,
+  .nav-collapse .active a {
+  background: #114A6B;
+  color: $white;
+  }
+   .ss-style-doublediagonal::before {
+     background-color: #114A6B;
+   }
+  #about {
+    li {
+      color: $light-gray;
+      i {
+        color: #114A6B;
+      }
+    }
+  }
+  #press {
+    h3 {
+      color: #114A6B;
+    }
+  }
+}
+
 
 
 @media screen and (min-width: 64em) {

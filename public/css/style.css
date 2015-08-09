@@ -2464,10 +2464,51 @@ section::after {
 .skin-1 .nav-collapse .active a {
   background: #CCCCCC;
   color: #333333; }
+.skin-1 .ss-style-doublediagonal::before {
+  background-color: #CCCCCC; }
 .skin-1 #about li {
   color: #514947; }
   .skin-1 #about li i {
     color: #CCCCCC; }
+
+.skin-2 .overlay {
+  background-color: rgba(17, 74, 107, 0.7); }
+.skin-2 .full-name h1 {
+  color: #FEFEFE;
+  text-shadow: none; }
+.skin-2 .full-name h2 {
+  color: #CCCCCC;
+  text-shadow: none; }
+.skin-2 section {
+  background-color: #1F81BA; }
+  .skin-2 section h1 {
+    color: #FEFEFE; }
+  .skin-2 section p {
+    color: #FEFEFE; }
+  .skin-2 section h2 {
+    color: #333333; }
+    .skin-2 section h2 small {
+      color: #CCCCCC;
+      font-weight: 300;
+      padding-left: 1rem; }
+.skin-2 .logo {
+  color: #FEFEFE; }
+.skin-2 .top-nav-collapse a {
+  color: #114A6B; }
+.skin-2 .top-nav-collapse .logo {
+  color: #114A6B; }
+.skin-2 .nav-collapse a:active,
+.skin-2 .nav-collapse .active a {
+  background: #114A6B;
+  color: #FEFEFE; }
+.skin-2 .ss-style-doublediagonal::before {
+  background-color: #114A6B; }
+.skin-2 #about li {
+  color: #CCCCCC; }
+  .skin-2 #about li i {
+    color: #114A6B; }
+.skin-2 #press h3 {
+  color: #114A6B; }
 
 @media screen and (min-width: 64em) {
   .skin-1 .logo {
