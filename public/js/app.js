@@ -22,16 +22,27 @@ $(document).ready(function () {
   gallery: {
     enabled: true
   },
-  type: 'image'
+  type: 'image',
+  callbacks: {
+    beforeOpen: function() {
+      imageSwipe();
+      $("body").swipe("enable");
+    },
+    afterClose: function() {
+      $("body").swipe("disable");
+    }
+  }
   // other options
   });
-  $("body").swipe( {
-    //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      console.log(direction);
-      var magnificPopup = $.magnificPopup.instance;
-      if(direction === 'left') magnificPopup.next(); 
-      if(direction === 'right') magnificPopup.prev(); 
-    }
-  });
+  function imageSwipe() {
+    $("body").swipe( {
+      //Generic swipe handler for all directions
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        console.log(direction);
+        var magnificPopup = $.magnificPopup.instance;
+        if(direction === 'left') magnificPopup.next(); 
+        if(direction === 'right') magnificPopup.prev(); 
+      }
+    });
+  }
 });
