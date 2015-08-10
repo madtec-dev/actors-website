@@ -225,6 +225,116 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 
 }
 
+.skin-1.photo-bg {
+  section#work {
+    background: url(/img/photo1-light.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    h3 {
+      color: $gray;
+    }
+
+  }
+  section#about {
+    background: url(/img/photo2-light.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    i {
+      color: $dark-gray;
+    }
+
+  }
+  section#press {
+    background: url(/img/photo3-light.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    h4 {
+      color: $gray;
+    }
+
+  }
+  section#contact {
+    background: url(/img/photo4-light.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+  }
+
+}
+
+
+
+.skin-2.photo-bg {
+  section#work {
+    background: url(/img/photo1-blue.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    h2 {
+      color: #0d8ddb;
+    }
+  }
+  section#about {
+    background: url(/img/photo2-blue.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    i {
+      color: $white;
+    }
+  }
+  section#press {
+    background: url(/img/photo3-blue.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    h3 {
+      color: $white;
+    }
+  }
+  section#contact {
+    background: url(/img/photo4-blue.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+    .phone a{
+      color: $light-gray;
+    }
+  }
+
+}
+
+.texture-bg section {
+  background-image: url(/img/noise2.png);
+}
+.skin-1.texture-bg section {
+  background-image: url(/img/noise.png);
+}
+
+.pattern-bg section {
+  background-image: url(/img/pattern.png);
+}
+
+.skin-1.pattern-bg section {
+  background-image: url(/img/pattern-light.png);
+}
+
+.skin-2.pattern-bg section {
+  background-image: url(/img/pattern-blue.png);
+}
+
+
 .skin-1.photo-bg section#work {
 
 }

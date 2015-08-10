@@ -2534,6 +2534,20 @@ textarea.field-error {
     background: linear-gradient(to right, #a90329 0%, #8f0222 44%, #6d0019 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 ); }
 
+.texture-bg {
+  font-weight: 400;
+  background-color: #1E1E1E;
+  background-image: url(/img/noise.png); }
+  .texture-bg:hover {
+    background-color: #333333; }
+
+.pattern-bg {
+  font-weight: 400;
+  background-color: #333333;
+  background-image: url(/img/pattern.png); }
+  .pattern-bg:hover {
+    background-color: #514947; }
+
 .photo-bg {
   font-weight: 400;
   background: url(/img/photo1.jpg) no-repeat top center;
@@ -2691,6 +2705,85 @@ textarea.field-error {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+
+.skin-1.photo-bg section#work {
+  background: url(/img/photo1-light.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .skin-1.photo-bg section#work h3 {
+    color: #514947; }
+.skin-1.photo-bg section#about {
+  background: url(/img/photo2-light.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .skin-1.photo-bg section#about i {
+    color: #333333; }
+.skin-1.photo-bg section#press {
+  background: url(/img/photo3-light.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .skin-1.photo-bg section#press h4 {
+    color: #514947; }
+.skin-1.photo-bg section#contact {
+  background: url(/img/photo4-light.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.skin-2.photo-bg section#work {
+  background: url(/img/photo1-blue.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .skin-2.photo-bg section#work h2 {
+    color: #0d8ddb; }
+.skin-2.photo-bg section#about {
+  background: url(/img/photo2-blue.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .skin-2.photo-bg section#about i {
+    color: #FEFEFE; }
+.skin-2.photo-bg section#press {
+  background: url(/img/photo3-blue.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .skin-2.photo-bg section#press h3 {
+    color: #FEFEFE; }
+.skin-2.photo-bg section#contact {
+  background: url(/img/photo4-blue.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .skin-2.photo-bg section#contact .phone a {
+    color: #CCCCCC; }
+
+.texture-bg section {
+  background-image: url(/img/noise2.png); }
+
+.skin-1.texture-bg section {
+  background-image: url(/img/noise.png); }
+
+.pattern-bg section {
+  background-image: url(/img/pattern.png); }
+
+.skin-1.pattern-bg section {
+  background-image: url(/img/pattern-light.png); }
+
+.skin-2.pattern-bg section {
+  background-image: url(/img/pattern-blue.png); }
 
 @media screen and (min-width: 64em) {
   .skin-1 .logo {

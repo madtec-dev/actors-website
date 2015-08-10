@@ -131,6 +131,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', end
   }
 }
 
+.texture-bg {
+  font-weight: 400;
+  background-color: $black;
+  background-image: url(/img/noise.png);
+
+  &:hover {
+  background-color: $dark-gray;
+  }
+}
+
+.pattern-bg {
+  font-weight: 400;
+  background-color: $dark-gray;
+  background-image: url(/img/pattern.png);
+
+  &:hover {
+  background-color: $gray;
+  }
+}
+
 .photo-bg {
   font-weight: 400;
   background: url(/img/photo1.jpg) no-repeat top center;

@@ -118,6 +118,21 @@
                          </a>
                     </span>
             </div>
+            <div class="setings-item texture-bg text--center">
+                    <span class="skin-name ">
+                         <a class="s-bg-03">
+                             Texture
+                         </a>
+                    </span>
+            </div>
+            <div class="setings-item pattern-bg text--center">
+                    <span class="skin-name ">
+                         <a class="s-bg-03">
+                             Pattern
+                         </a>
+                    </span>
+            </div>
+
             <div class="setings-item photo-bg text--center">
                     <span class="skin-name ">
                          <a class="s-bg-02">
@@ -230,15 +245,35 @@
     $('.default-bg').click(function () {
         $("body").removeClass("photo-bg");
         $("body").removeClass("gradient-bg");
+        $("body").removeClass("texture-bg");
+        $("body").removeClass("pattern-bg");
     });
 
     $('.gradient-bg').click(function () {
         $("body").removeClass("photo-bg");
+        $("body").removeClass("texture-bg");
+        $("body").removeClass("pattern-bg");
         $("body").addClass("gradient-bg");
     });
+    
+    $('.texture-bg').click(function () {
+        $("body").removeClass("photo-bg");
+        $("body").removeClass("gradient-bg");
+        $("body").removeClass("pattern-bg");
+        $("body").addClass("texture-bg");
+    });
+
+    $('.pattern-bg').click(function () {
+        $("body").removeClass("photo-bg");
+        $("body").removeClass("gradient-bg");
+        $("body").removeClass("texture-bg");
+        $("body").addClass("pattern-bg");
+    });
+
 
     $('.photo-bg').click(function () {
         $("body").removeClass("gradient-bg");
+        $("body").removeClass("texture-bg");
         $("body").addClass("photo-bg");
     });
 
