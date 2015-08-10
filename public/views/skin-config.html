@@ -103,6 +103,29 @@
                         </a>
                     </span>
             </div>
+            <div class="title">Background</div>
+            <div class="text--center setings-item default-bg">
+                    <span class="skin-name ">
+                         <a class="s-bg-0">
+                             Plain
+                         </a>
+                    </span>
+            </div>
+            <div class="setings-item text--center gradient-bg">
+                    <span class="skin-name ">
+                         <a class="s-bg-1">
+                             Gradient
+                         </a>
+                    </span>
+            </div>
+            <div class="setings-item photo-bg text--center">
+                    <span class="skin-name ">
+                         <a class="s-bg-02">
+                             Photo
+                         </a>
+                    </span>
+            </div>
+
         </div>
     </div>
 </div>
@@ -189,20 +212,35 @@
         $("body").removeClass("skin-3");
     });
 
-    // Blue skin
+    // Light skin
     $('.light-skin').click(function () {
         $("body").removeClass("skin-2");
         $("body").removeClass("skin-3");
         $("body").addClass("skin-1");
     });
 
-    // Inspinia ultra skin
+    // Colored skin
     $('.colored-skin').click(function () {
         $("body").removeClass("skin-1");
         $("body").removeClass("skin-3");
         $("body").addClass("skin-2");
     });
+    
+    // backgrounds
+    $('.default-bg').click(function () {
+        $("body").removeClass("photo-bg");
+        $("body").removeClass("gradient-bg");
+    });
 
+    $('.gradient-bg').click(function () {
+        $("body").removeClass("photo-bg");
+        $("body").addClass("gradient-bg");
+    });
+
+    $('.photo-bg').click(function () {
+        $("body").removeClass("gradient-bg");
+        $("body").addClass("photo-bg");
+    });
 
     // Helper function - only for demo purpose
     function SmoothlyMenu() {

@@ -315,9 +315,9 @@ header {
 section {
   position: relative;
   padding: 0 12px;
-  box-shadow: 0 -3px 5px rgba(0,0,0,0.5);
-  background-color: $dark-gray;
+  box-shadow: 0 0px 8px 3px rgba(0,0,0,0.5);
   min-height: 100%;
+  background-color: $dark-gray;
   z-index: 2;
   h1 {
     color: $light-gray;
@@ -416,14 +416,14 @@ section {
 }
 
 /* SEPARATOR */
-section::before,
+
+/*section::before,
 section::after {
   position: absolute;
   content: '';
   pointer-events: none;
 }
 
-/* Triangles */
 .ss-style-doublediagonal::before,
 .ss-style-doublediagonal::after {
   top: 0;
@@ -446,29 +446,7 @@ section::after {
   -webkit-transform-origin: 3% 0;
   transform-origin: 3% 0;
 }
-
-.ss-style-doublediagonal2::before,
-.ss-style-doublediagonal2::after {
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-
-.ss-style-doublediagonal2::before {
-  height: 50%;
-  background: $gray;
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-}
+*/
 
 
 /* VIDEO */
