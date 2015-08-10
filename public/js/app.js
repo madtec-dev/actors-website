@@ -15,4 +15,23 @@ $(document).ready(function () {
   $.get("views/skin-config.html", function (data) {
       $('body').append(data);
   });
+  
+  //Magnific popup
+  $('.gallery').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  gallery: {
+    enabled: true
+  },
+  type: 'image'
+  // other options
+  });
+  $("body").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      console.log(direction);
+      var magnificPopup = $.magnificPopup.instance;
+      if(direction === 'left') magnificPopup.next(); 
+      if(direction === 'right') magnificPopup.prev(); 
+    }
+  });
 });
